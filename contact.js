@@ -11,8 +11,13 @@
 				alert('myt ' + contact.phoneNumbers[0].value);
 
 				var contactsDisplayed = document.getElementById("displayContacts").value;
-
-				document.getElementById("displayContacts").value = contactsDisplayed + ',' + contact.phoneNumbers[0].value;
+				var contactsDisplayedLength = contactsDisplayed.length;
+				if (contactsDisplayedLength > 0) {
+					var addup = "";
+				} else {
+					var addup = contactsDisplayed + ",";
+				}
+				document.getElementById("displayContacts").value = addup + contact.phoneNumbers[0].value;
 
 			}, function(err) {
 				alert('Error: ' + err);
