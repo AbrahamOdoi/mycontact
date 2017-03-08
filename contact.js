@@ -28,14 +28,15 @@
 	function onDeviceReady() {
 
 		document.getElementById("search").onclick = function() {
-			navigator.contactsPhoneNumbers.list(function(contact) { 
+			navigator.contactsPhoneNumbers.list(function(contacts) { 
+				alert('yes');
 		      // console.log(contacts.length + ' contacts found');
-		      	alert(contact.length + ' contacts found')
+		      	alert(contacts.length + ' contacts found')
 		      	
-		      for(var i = 0; i < contact.length; i++) {
+		      for(var i = 0; i < contacts.length; i++) {
 		         // console.log(contacts[i].id + " - " + contacts[i].displayName);
-		         for(var j = 0; j < contact[i].phoneNumbers.length; j++) {
-		            var phone = contact[i].phoneNumbers[j];
+		         for(var j = 0; j < contacts[i].phoneNumbers.length; j++) {
+		            var phone = contacts[i].phoneNumbers[j];
 		            // console.log("===> " + phone.type + "  " + phone.number + " (" + phone.normalizedNumber+ ")");
 		         }
 		         alert(phone);
