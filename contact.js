@@ -18,6 +18,6 @@
 			}, function(err) {
 				alert('Error: ' + err);
 			});
-		}
+		};
 	} ;
 })();
