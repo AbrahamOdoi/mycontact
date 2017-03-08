@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Contacts</title>
-  <script type="text/javascript" src="contact.js"></script>
-	<script src="scripts/jquery.js"></script>
-	<script src="scripts/jquery.mobile.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
-      <script src="materialize-v0.97.5/materialize/js/materialize.min.js"></script>
+	<head>
+		<title>Contacts</title>
+		<script type="text/javascript" src="contact.js"></script>
+		<script src="scripts/jquery.js"></script>
+		<script src="scripts/jquery.mobile.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="materialize-v0.97.5/materialize/js/materialize.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="font_awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="font_awesome/css/font-awesome.min.css">
-    <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" type="text/css" href="font_awesome/css/font-awesome.min.css">
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
 		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
-	 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-</head>
-<body>
-<!-- style="background-color:#CC162E" -->
-	<div data-role="page" id="landingPage">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+	</head>
+	<body>
+		<!-- style="background-color:#CC162E" -->
+		<div data-role="page" id="landingPage">
 			<div data-role="header" style="text-shadow: none;background: white">
 				<h1 style="color: black">Dashboard</h1>
 				<a href="dashboard.html" data-role="button" data-icon="home" data-iconpos="notext" style="background: white;border: none;">Home</a>
 				<a href="index.html" data-role="button" data-icon="back" data-iconpos="notext" style="background: white;border: none;">Back</a>
 			</div><!-- /header -->
-   <div data-role="content" style="text-shadow: none">
-   <center>
-	  <div class="row">
-	   <div center class="input-field">
-        <div class="col s6">
-        <a class="waves-effect btn" id="searches" style="border-radius: 25px 10px;color: black;background:white">My Phonebook</a>
-        </div>
+			<div data-role="content" style="text-shadow: none">
+				<center>
+					<div class="row">
+						<div center class="input-field">
+							<div class="col s6">
+								<a class="waves-effect btn" id="search" style="border-radius: 25px 10px;color: black;background:white">Phonebook</a>
+							</div>
+							<div id="displayContacts">
+								
+							</div>
 
-      </div>
-        
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-			<script type="text/javascript" src="cordova.js"></script>
-			<script type="text/javascript" src="scripts/platformOverrides.js"></script>
-			<script type="text/javascript" src="scripts/index.js"></script>
-			<script src="materialize-v0.97.5/materialize/js/materialize.min.js"></script>
-			
-</body>
+						</div>
+
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+						<script type="text/javascript" src="cordova.js"></script>
+						<script type="text/javascript" src="scripts/platformOverrides.js"></script>
+						<script type="text/javascript" src="scripts/index.js"></script>
+						<script src="materialize-v0.97.5/materialize/js/materialize.min.js"></script>
+
+	</body>
 </html>
