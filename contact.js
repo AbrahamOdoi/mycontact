@@ -8,11 +8,11 @@
 		}
 
 		function errorHandler(e) {
-			console.log("errorHandler: " + e);
+			alert("errorHandler: " + e);
 		}
 
 		function gotContacts(c) {
-			console.log("gotContacts, number of results " + c.length);
+			alert("gotContacts, number of results " + c.length);
 
 			mobileDiv = document.querySelector("#mobile");
 			emailDiv = document.querySelector("#email");
