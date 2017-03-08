@@ -5,11 +5,11 @@
 
 		document.getElementById("search").onclick = function() {
 			navigator.contacts.pickContact(function(contact) {
-				alert(contact.length);
+				alert(contacts.length);
 				// alert('The following contact has been selected:' + JSON.stringify(contact));
 
 				document.getElementById("search").value = contact.phoneNumbers[0].value;
-				alert(contact.phoneNumbers[0].value);
+				// alert(contact.phoneNumbers[0].value);
 				var countMyContacts = contactCount;
 				alert(countMyContacts);
 
